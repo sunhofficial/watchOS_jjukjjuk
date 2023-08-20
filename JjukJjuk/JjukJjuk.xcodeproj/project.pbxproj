@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C705D85D2A92A7CD000D6068 /* JjukJjukApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D85C2A92A7CD000D6068 /* JjukJjukApp.swift */; };
+		C705D85F2A92A7CD000D6068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D85E2A92A7CD000D6068 /* ContentView.swift */; };
+		C705D8612A92A7CF000D6068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705D8602A92A7CF000D6068 /* Assets.xcassets */; };
+		C705D8642A92A7CF000D6068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705D8632A92A7CF000D6068 /* Preview Assets.xcassets */; };
+		C705D86A2A92A7CF000D6068 /* JjukJjuk Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C705D8692A92A7CF000D6068 /* JjukJjuk Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C705D86F2A92A7CF000D6068 /* JjukJjukApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D86E2A92A7CF000D6068 /* JjukJjukApp.swift */; };
+		C705D8712A92A7CF000D6068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8702A92A7CF000D6068 /* ContentView.swift */; };
+		C705D8732A92A7CF000D6068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705D8722A92A7CF000D6068 /* Assets.xcassets */; };
+		C705D8762A92A7CF000D6068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705D8752A92A7CF000D6068 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C705D86B2A92A7CF000D6068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C705D8512A92A7CD000D6068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C705D8682A92A7CF000D6068;
+			remoteInfo = "JjukJjuk Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C705D87C2A92A7CF000D6068 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C705D86A2A92A7CF000D6068 /* JjukJjuk Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C705D8592A92A7CD000D6068 /* JjukJjuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JjukJjuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C705D85C2A92A7CD000D6068 /* JjukJjukApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjukJjukApp.swift; sourceTree = "<group>"; };
+		C705D85E2A92A7CD000D6068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C705D8602A92A7CF000D6068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C705D8632A92A7CF000D6068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C705D8692A92A7CF000D6068 /* JjukJjuk Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JjukJjuk Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C705D86E2A92A7CF000D6068 /* JjukJjukApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjukJjukApp.swift; sourceTree = "<group>"; };
+		C705D8702A92A7CF000D6068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C705D8722A92A7CF000D6068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C705D8752A92A7CF000D6068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C705D8562A92A7CD000D6068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C705D8662A92A7CF000D6068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C705D8502A92A7CD000D6068 = {
+			isa = PBXGroup;
+			children = (
+				C705D85B2A92A7CD000D6068 /* JjukJjuk */,
+				C705D86D2A92A7CF000D6068 /* JjukJjuk Watch App */,
+				C705D85A2A92A7CD000D6068 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C705D85A2A92A7CD000D6068 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C705D8592A92A7CD000D6068 /* JjukJjuk.app */,
+				C705D8692A92A7CF000D6068 /* JjukJjuk Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C705D85B2A92A7CD000D6068 /* JjukJjuk */ = {
+			isa = PBXGroup;
+			children = (
+				C705D85C2A92A7CD000D6068 /* JjukJjukApp.swift */,
+				C705D85E2A92A7CD000D6068 /* ContentView.swift */,
+				C705D8602A92A7CF000D6068 /* Assets.xcassets */,
+				C705D8622A92A7CF000D6068 /* Preview Content */,
+			);
+			path = JjukJjuk;
+			sourceTree = "<group>";
+		};
+		C705D8622A92A7CF000D6068 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C705D8632A92A7CF000D6068 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C705D86D2A92A7CF000D6068 /* JjukJjuk Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C705D86E2A92A7CF000D6068 /* JjukJjukApp.swift */,
+				C705D8702A92A7CF000D6068 /* ContentView.swift */,
+				C705D8722A92A7CF000D6068 /* Assets.xcassets */,
+				C705D8742A92A7CF000D6068 /* Preview Content */,
+			);
+			path = "JjukJjuk Watch App";
+			sourceTree = "<group>";
+		};
+		C705D8742A92A7CF000D6068 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C705D8752A92A7CF000D6068 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C705D8582A92A7CD000D6068 /* JjukJjuk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C705D87D2A92A7CF000D6068 /* Build configuration list for PBXNativeTarget "JjukJjuk" */;
+			buildPhases = (
+				C705D8552A92A7CD000D6068 /* Sources */,
+				C705D8562A92A7CD000D6068 /* Frameworks */,
+				C705D8572A92A7CD000D6068 /* Resources */,
+				C705D87C2A92A7CF000D6068 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C705D86C2A92A7CF000D6068 /* PBXTargetDependency */,
+			);
+			name = JjukJjuk;
+			productName = JjukJjuk;
+			productReference = C705D8592A92A7CD000D6068 /* JjukJjuk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C705D8682A92A7CF000D6068 /* JjukJjuk Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C705D8792A92A7CF000D6068 /* Build configuration list for PBXNativeTarget "JjukJjuk Watch App" */;
+			buildPhases = (
+				C705D8652A92A7CF000D6068 /* Sources */,
+				C705D8662A92A7CF000D6068 /* Frameworks */,
+				C705D8672A92A7CF000D6068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JjukJjuk Watch App";
+			productName = "JjukJjuk Watch App";
+			productReference = C705D8692A92A7CF000D6068 /* JjukJjuk Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C705D8512A92A7CD000D6068 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C705D8582A92A7CD000D6068 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					C705D8682A92A7CF000D6068 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = C705D8542A92A7CD000D6068 /* Build configuration list for PBXProject "JjukJjuk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C705D8502A92A7CD000D6068;
+			productRefGroup = C705D85A2A92A7CD000D6068 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C705D8582A92A7CD000D6068 /* JjukJjuk */,
+				C705D8682A92A7CF000D6068 /* JjukJjuk Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C705D8572A92A7CD000D6068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C705D8642A92A7CF000D6068 /* Preview Assets.xcassets in Resources */,
+				C705D8612A92A7CF000D6068 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C705D8672A92A7CF000D6068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C705D8762A92A7CF000D6068 /* Preview Assets.xcassets in Resources */,
+				C705D8732A92A7CF000D6068 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C705D8552A92A7CD000D6068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C705D85F2A92A7CD000D6068 /* ContentView.swift in Sources */,
+				C705D85D2A92A7CD000D6068 /* JjukJjukApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C705D8652A92A7CF000D6068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C705D8712A92A7CF000D6068 /* ContentView.swift in Sources */,
+				C705D86F2A92A7CF000D6068 /* JjukJjukApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C705D86C2A92A7CF000D6068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C705D8682A92A7CF000D6068 /* JjukJjuk Watch App */;
+			targetProxy = C705D86B2A92A7CF000D6068 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C705D8772A92A7CF000D6068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C705D8782A92A7CF000D6068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C705D87A2A92A7CF000D6068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JjukJjuk Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = NG2NLR2Z86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Sunho.JjukJjuk;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sunho.JjukJjuk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		C705D87B2A92A7CF000D6068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JjukJjuk Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = NG2NLR2Z86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Sunho.JjukJjuk;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sunho.JjukJjuk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		C705D87E2A92A7CF000D6068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JjukJjuk/Preview Content\"";
+				DEVELOPMENT_TEAM = NG2NLR2Z86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sunho.JjukJjuk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C705D87F2A92A7CF000D6068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JjukJjuk/Preview Content\"";
+				DEVELOPMENT_TEAM = NG2NLR2Z86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sunho.JjukJjuk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C705D8542A92A7CD000D6068 /* Build configuration list for PBXProject "JjukJjuk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C705D8772A92A7CF000D6068 /* Debug */,
+				C705D8782A92A7CF000D6068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C705D8792A92A7CF000D6068 /* Build configuration list for PBXNativeTarget "JjukJjuk Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C705D87A2A92A7CF000D6068 /* Debug */,
+				C705D87B2A92A7CF000D6068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C705D87D2A92A7CF000D6068 /* Build configuration list for PBXNativeTarget "JjukJjuk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C705D87E2A92A7CF000D6068 /* Debug */,
+				C705D87F2A92A7CF000D6068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C705D8512A92A7CD000D6068 /* Project object */;
+}
