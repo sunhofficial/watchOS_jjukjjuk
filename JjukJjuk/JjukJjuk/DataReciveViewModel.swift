@@ -9,7 +9,7 @@ import SwiftUI
 import WatchConnectivity
 
 class DateReceiveViewModel: NSObject, ObservableObject, WCSessionDelegate {
-    @Published var receivedData:  [String: [String: Double]] = [:]
+    @Published var receivedData:  [(timestamp: Double, sensorData: [String: [String: Double]])] = []
     private let fileManager = FileManager.default
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -45,28 +45,29 @@ class DateReceiveViewModel: NSObject, ObservableObject, WCSessionDelegate {
             let header = "timestamp,acceleration_x,acceleration_y,acceleration_z,attitude_pitch,attitude_roll,attitude_yaw,gravity_x,gravity_y,gravity_z,rotation_x,rotation_y,rotation_z\n"
             writeToFile(header, fileURL: fileURL)
             DispatchQueue.main.async {
-//                var currentTime: Double = 0.0
-//                let timeStep: Double = 0.2
+                var currentTime: Double = 0.0
+                let timeStep: Double = 0.2
                 for data in dataArray {
-//                    if let timestamp = data["timestamp"] as? Double {
-//                        currentTime += timeStep
+                    if let timestamp = data["timestamp"] as? Double {
+                        currentTime += timeStep
                         var sensorData: [String:[String:Double]] = [:]
                         for (key,val) in data {
                             if key != "timestamp", let val = val as? [String: Double] {
                                 sensorData[key] = val
                             }
                         }
-                        self.$receivedData.append(  sensorData)
+                        self.receivedData.append((timestamp: currentTime, sensorData: sensorData))
+                        
                         let acceleration = sensorData["userAcceleration"] ?? ["x": 0.0, "y": 0.0, "z": 0.0]
                         let rotation = sensorData["rotationRate"] ?? ["x": 0.0, "y": 0.0, "z": 0.0]
                         let attitude = sensorData["attitude"] ?? ["pitch": 0.0, "roll": 0.0, "yaw": 0.0]
                         let gravity = sensorData["gravity"] ?? ["x": 0.0, "y": 0.0, "z": 0.0]
                         // Timestamp 소수점 둘째자리까지
-//                        let currentTimeString = String(format: "%.2f", currentTime)
-                        let row = "\(acceleration["x"]!),\(acceleration["y"]!),\(acceleration["z"]!),\(attitude["pitch"]!),\(attitude["roll"]!),\(attitude["yaw"]!),\(gravity["x"]!),\(gravity["y"]!),\(gravity["z"]!),\(rotation["x"]!),\(rotation["y"]!),\(rotation["z"]!)\n"
+                        let currentTimeString = String(format: "%.2f", currentTime)
+                        let row = "\(currentTimeString),\(acceleration["x"]!),\(acceleration["y"]!),\(acceleration["z"]!),\(attitude["pitch"]!),\(attitude["roll"]!),\(attitude["yaw"]!),\(gravity["x"]!),\(gravity["y"]!),\(gravity["z"]!),\(rotation["x"]!),\(rotation["y"]!),\(rotation["z"]!)\n"
                         self.writeToFile(row, fileURL: fileURL)
                     }
-//                }
+                }
             }
 
         }

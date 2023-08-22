@@ -19,6 +19,7 @@
 		C705D8812A92A9EA000D6068 /* MeasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8802A92A9EA000D6068 /* MeasureViewModel.swift */; };
 		C705D8832A92B0F8000D6068 /* DataReciveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8822A92B0F8000D6068 /* DataReciveViewModel.swift */; };
 		C705D8852A92B5DE000D6068 /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8842A92B5DE000D6068 /* MeasureModel.swift */; };
+		C741CCB32A9557540091EFF2 /* WatchActivityClassfier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C741CCB22A9557540091EFF2 /* WatchActivityClassfier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		C705D8802A92A9EA000D6068 /* MeasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewModel.swift; sourceTree = "<group>"; };
 		C705D8822A92B0F8000D6068 /* DataReciveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReciveViewModel.swift; sourceTree = "<group>"; };
 		C705D8842A92B5DE000D6068 /* MeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
+		C741CCB22A9557540091EFF2 /* WatchActivityClassfier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WatchActivityClassfier.mlmodel; sourceTree = SOURCE_ROOT; };
 		C76705C02A940ABA00355EC9 /* JjukJjuk-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "JjukJjuk-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C76E1AD12A952E370075829F /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		C76E1AD42A952E370075829F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				C705D8702A92A7CF000D6068 /* ContentView.swift */,
 				C705D8802A92A9EA000D6068 /* MeasureViewModel.swift */,
 				C705D8842A92B5DE000D6068 /* MeasureModel.swift */,
+				C741CCB22A9557540091EFF2 /* WatchActivityClassfier.mlmodel */,
 				C705D8722A92A7CF000D6068 /* Assets.xcassets */,
 				C705D8742A92A7CF000D6068 /* Preview Content */,
 			);
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C705D8852A92B5DE000D6068 /* MeasureModel.swift in Sources */,
+				C741CCB32A9557540091EFF2 /* WatchActivityClassfier.mlmodel in Sources */,
 				C705D8712A92A7CF000D6068 /* ContentView.swift in Sources */,
 				C705D8812A92A9EA000D6068 /* MeasureViewModel.swift in Sources */,
 				C705D86F2A92A7CF000D6068 /* JjukJjukApp.swift in Sources */,

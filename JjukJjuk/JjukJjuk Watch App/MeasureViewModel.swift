@@ -8,7 +8,19 @@
 import SwiftUI
 import CoreMotion
 import WatchConnectivity
-class MeasureViewModel: NSObject, ObservableObject, WCSessionDelegate, WKExtendedRuntimeSessionDelegate{
+class MeasureViewModel: NSObject, ObservableObject, WKExtendedRuntimeSessionDelegate, WCSessionDelegate{
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
+        print("??")
+    }
+
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+
+    }
+
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+
+    }
+
     var data: [MeasureModel] = []
     private var backgroundSession = WKExtendedRuntimeSession()
     private var motionManager = CMMotionManager()
@@ -20,7 +32,8 @@ class MeasureViewModel: NSObject, ObservableObject, WCSessionDelegate, WKExtende
         guard motionManager.isDeviceMotionAvailable else {
             return
         }
-        if WKExtendedRuntimeSession.isSupported() {
+        backgroundSession.delegate = self
+        if WCSession.isSupported() {
             WCSession.default.delegate = self
             WCSession.default.activate()
         }
@@ -28,29 +41,28 @@ class MeasureViewModel: NSObject, ObservableObject, WCSessionDelegate, WKExtende
 
     deinit {
         motionManager.stopDeviceMotionUpdates()
+        backgroundSession.invalidate()
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
 
     }
 
-//    func startMotionUpdates() {
-//        motionManager.deviceMotionUpdateInterval = 0.2
-//        motionManager.startDeviceMotionUpdates()
-//    }
-
-    func startCollectData() {
+    func startMotionUpdates() {
         motionManager.deviceMotionUpdateInterval = 0.2
         motionManager.startDeviceMotionUpdates()
+    }
+
+    func startCollectData() {
+        startMotionUpdates()
         timering = true
-        self.backgroundSession = WKExtendedRuntimeSession()
-        self.backgroundSession?.start()
+        self.backgroundSession.start()
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
             guard let motion = self.motionManager.deviceMotion else {return}
-            let newData = MeasureModel(attitude: motion.attitude, gravity: motion.gravity, userAcceleration: motion.userAcceleration, rotationRate: motion.rotationRate)
+            let newData = MeasureModel(attitude: motion.attitude, gravity: motion.gravity, timestamp: motion.timestamp, userAcceleration: motion.userAcceleration, rotationRate: motion.rotationRate)
             self.data.append(newData)
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.8) {
             self.stopCollectData()
         }
     }
@@ -60,17 +72,15 @@ class MeasureViewModel: NSObject, ObservableObject, WCSessionDelegate, WKExtende
         WKInterfaceDevice.current().play(.notification)
         self.timer?.invalidate()
         self.timer = nil
-        print(data)
         sendToPhone()
         data.removeAll()
-//        self.backgroundSession?.invalidate()
-//        self.backgroundSession = nil//        WKExtendedRuntimeSession().invalidate()
-
     }
 
     func sendToPhone() {
         let dataToSend = data.map {
-            ["attitude": [
+            [
+                "timestamp": $0.timestamp,
+                "attitude": [
                 "pitch": $0.attitude.pitch,
                 "roll": $0.attitude.roll,
                 "yaw": $0.attitude.yaw
@@ -80,7 +90,6 @@ class MeasureViewModel: NSObject, ObservableObject, WCSessionDelegate, WKExtende
                 "y": $0.gravity.y,
                 "z": $0.gravity.z
              ],
-//             "timestamp": $0.timestamp,
              "userAcceleration": [
                 "x": $0.userAcceleration.x,
                 "y": $0.userAcceleration.y,
