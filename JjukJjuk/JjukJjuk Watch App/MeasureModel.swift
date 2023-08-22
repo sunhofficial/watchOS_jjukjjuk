@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import CoreMotion
+struct MeasureModel {
+    var attitude: CMAttitude
+    var gravity: CMAcceleration
+//    var timestamp: TimeInterval
+     var userAcceleration: CMAcceleration
+     var rotationRate: CMRotationRate
+
+
+}

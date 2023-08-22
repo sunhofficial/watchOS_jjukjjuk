@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
-
+import WatchConnectivity
 struct ContentView: View {
+    @StateObject var vm = DateReceiveViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView {
+//            ForEach(vm.receivedData, id: \.self) { item in
+//                VStack(alignment: .leading) {
+//                    Text("Timestamp: \(item.timestamp)")
+//                }
+//                .padding(.bottom, 10)
+//            }
         }
-        .padding()
     }
 }
 
@@ -24,3 +26,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

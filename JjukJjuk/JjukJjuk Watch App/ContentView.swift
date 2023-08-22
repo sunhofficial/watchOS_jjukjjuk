@@ -7,15 +7,26 @@
 
 import SwiftUI
 
+import CoreML
+import WatchConnectivity
+import WatchKit
+
+
 struct ContentView: View {
+    @StateObject var motionManager = MeasureViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("User Acceleration:")
+            Button(action: {
+                    motionManager.startCollectData()
+            }) {
+                Text(motionManager.timering ? "테스트진행중" : "테스트하자")
+            }
         }
-        .padding()
+//        .onAppear {
+//            motionManager.startMotionUpdates()
+//        }
     }
 }
 

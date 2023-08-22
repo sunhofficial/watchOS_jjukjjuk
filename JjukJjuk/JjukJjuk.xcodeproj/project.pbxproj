@@ -16,6 +16,9 @@
 		C705D8712A92A7CF000D6068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8702A92A7CF000D6068 /* ContentView.swift */; };
 		C705D8732A92A7CF000D6068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705D8722A92A7CF000D6068 /* Assets.xcassets */; };
 		C705D8762A92A7CF000D6068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705D8752A92A7CF000D6068 /* Preview Assets.xcassets */; };
+		C705D8812A92A9EA000D6068 /* MeasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8802A92A9EA000D6068 /* MeasureViewModel.swift */; };
+		C705D8832A92B0F8000D6068 /* DataReciveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8822A92B0F8000D6068 /* DataReciveViewModel.swift */; };
+		C705D8852A92B5DE000D6068 /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705D8842A92B5DE000D6068 /* MeasureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,16 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C76E1ADA2A952E370075829F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +66,14 @@
 		C705D8702A92A7CF000D6068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C705D8722A92A7CF000D6068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C705D8752A92A7CF000D6068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C705D8802A92A9EA000D6068 /* MeasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewModel.swift; sourceTree = "<group>"; };
+		C705D8822A92B0F8000D6068 /* DataReciveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReciveViewModel.swift; sourceTree = "<group>"; };
+		C705D8842A92B5DE000D6068 /* MeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
+		C76705C02A940ABA00355EC9 /* JjukJjuk-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "JjukJjuk-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C76E1AD12A952E370075829F /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		C76E1AD42A952E370075829F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C76E1AD62A952E370075829F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C63F092A9486F40049A7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +99,8 @@
 			children = (
 				C705D85B2A92A7CD000D6068 /* JjukJjuk */,
 				C705D86D2A92A7CF000D6068 /* JjukJjuk Watch App */,
+				C76E1AD32A952E370075829F /* background */,
+				C76E1AD02A952E370075829F /* Frameworks */,
 				C705D85A2A92A7CD000D6068 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +117,10 @@
 		C705D85B2A92A7CD000D6068 /* JjukJjuk */ = {
 			isa = PBXGroup;
 			children = (
+				C7C63F092A9486F40049A7B3 /* Info.plist */,
 				C705D85C2A92A7CD000D6068 /* JjukJjukApp.swift */,
 				C705D85E2A92A7CD000D6068 /* ContentView.swift */,
+				C705D8822A92B0F8000D6068 /* DataReciveViewModel.swift */,
 				C705D8602A92A7CF000D6068 /* Assets.xcassets */,
 				C705D8622A92A7CF000D6068 /* Preview Content */,
 			);
@@ -113,8 +138,11 @@
 		C705D86D2A92A7CF000D6068 /* JjukJjuk Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C76705C02A940ABA00355EC9 /* JjukJjuk-Watch-App-Info.plist */,
 				C705D86E2A92A7CF000D6068 /* JjukJjukApp.swift */,
 				C705D8702A92A7CF000D6068 /* ContentView.swift */,
+				C705D8802A92A9EA000D6068 /* MeasureViewModel.swift */,
+				C705D8842A92B5DE000D6068 /* MeasureModel.swift */,
 				C705D8722A92A7CF000D6068 /* Assets.xcassets */,
 				C705D8742A92A7CF000D6068 /* Preview Content */,
 			);
@@ -127,6 +155,23 @@
 				C705D8752A92A7CF000D6068 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C76E1AD02A952E370075829F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C76E1AD12A952E370075829F /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76E1AD32A952E370075829F /* background */ = {
+			isa = PBXGroup;
+			children = (
+				C76E1AD42A952E370075829F /* IntentHandler.swift */,
+				C76E1AD62A952E370075829F /* Info.plist */,
+			);
+			path = background;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +203,7 @@
 				C705D8652A92A7CF000D6068 /* Sources */,
 				C705D8662A92A7CF000D6068 /* Frameworks */,
 				C705D8672A92A7CF000D6068 /* Resources */,
+				C76E1ADA2A952E370075829F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -233,6 +279,7 @@
 			files = (
 				C705D85F2A92A7CD000D6068 /* ContentView.swift in Sources */,
 				C705D85D2A92A7CD000D6068 /* JjukJjukApp.swift in Sources */,
+				C705D8832A92B0F8000D6068 /* DataReciveViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C705D8852A92B5DE000D6068 /* MeasureModel.swift in Sources */,
 				C705D8712A92A7CF000D6068 /* ContentView.swift in Sources */,
+				C705D8812A92A9EA000D6068 /* MeasureViewModel.swift in Sources */,
 				C705D86F2A92A7CF000D6068 /* JjukJjukApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +360,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -362,12 +412,14 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
 		C705D87A2A92A7CF000D6068 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,7 +428,9 @@
 				DEVELOPMENT_TEAM = NG2NLR2Z86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JjukJjuk-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Sunho.JjukJjuk;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,13 +445,14 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
 			};
 			name = Debug;
 		};
 		C705D87B2A92A7CF000D6068 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,7 +461,9 @@
 				DEVELOPMENT_TEAM = NG2NLR2Z86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JjukJjuk-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Sunho.JjukJjuk;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,7 +479,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
 			};
 			name = Release;
 		};
@@ -438,13 +495,15 @@
 				DEVELOPMENT_TEAM = NG2NLR2Z86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JjukJjuk/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,13 +530,15 @@
 				DEVELOPMENT_TEAM = NG2NLR2Z86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JjukJjuk/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JjukJjuk;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
